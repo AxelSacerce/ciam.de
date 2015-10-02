@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CIAM</title>
+    <!-- Estilos fonts -->    
+    <link rel="stylesheet" href="./ui/css/font-awesome.min.css" type="text/css">    
+    <!-- Estilos bootstrap -->
+    <link rel="stylesheet" href="./ui/css/bootstrap.min.css" type="text/css">  
+    <!-- Estilos bootstrap vertical menu -->  
+    <link rel="stylesheet" href="./ui/css/bootstrap-vertical-menu.css">
+    <!-- Estilos ciam -->    
+    <link rel="stylesheet" href="./ui/css/ciam.css" type="text/css">
+</head>
+<body>
+   
+   <div class="container-fluid">
+    <header class="row">
+        <div class="col-md-4">
+            {LOGO CIAM}
+            
+        </div>
+        <div class="col-md-8">
+            <ul id="menu-principal">
+                <li><a href="">ICO 1</a></li>
+                <li><a href="">ICO 2</a></li>
+                <li><a href="">ICO 3</a></li>
+                <li><a href="">ICO 4</a></li>
+                <li><a href="">ICO 5</a></li>
+                <li><a href="">ICO 6</a></li>
+                <li role="presentation" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dr.Nombre<i class="fa fa-fw fa-lg fa-sort-desc"></i>
+                    </a>                    
+                        <ul class="dropdown-menu">
+                            <li>
+                            <a href="#">
+                                Modificar Perfil
+                                <i class="fa fa-pencil"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Cerrar Sesión
+                                <i class="fa fa-user-times"></i>
+                                </a>
+                            </li>
+                        </ul>
+               </li>
+                <li><a href="">ICO 8</a></li>
+                <li><a href="">ICO 9</a></li>
+                <li><a href="">ICO 10</a></li>
+            </ul> <!-- Principal -->          
+            
+        </div>
+    </header> <!-- HEADER ROW -->  
+        <div class="row">
+
+            <div class="col-md-5">
+                <ul id="menu-card">
+                    <li>{FOTO}</li>
+                    <li>{NOMBRE_PACIENTE}</li>
+                    <li>{LOGO}</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-5">
+                <ul id="menu-acciones">
+                <li>{HORA}</li>
+                <li>{INTERRUMPIR}</li>
+                <li>{CONCLUIR}</li>
+                <li>{TRANSFERIR}</li>
+                <li>{PAUSAR}</li>
+                </ul>
+            </div>
+
+
+        </div> <!-- DIV ROW -->
+    <div id="content-message-dashboard">
+        <div class="init col-md-6">
+
+           <h3 class="limit text-center">Mensajes</h3>
+           <div class="container-fluid" >
+            <div id="mensaje" class="panel panel-default"  style="overflow:scroll">
+                 <div class="panel-body">
+                      <ul class="list-group">
+                            <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 <ul>
+                                     <li>
+                                         Dar seguimiento a mensaje de contact Center.
+                                     </li>
+                                 </ul>
+                              </li>
+                                        
+                                
+                            <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 <ul>
+                                     <li>
+                                         Dar seguimiento a mensaje de contact Center.
+                                     </li>
+                                 </ul>
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 <ul>
+                                     <li>
+                                         Dar seguimiento a mensaje de contact Center.
+                                     </li>
+                                 </ul>
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 <ul>
+                                     <li>
+                                         Dar seguimiento a mensaje de contact Center.
+                                     </li>
+                                 </ul>
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 <ul>
+                                     <li>
+                                         Dar seguimiento a mensaje de contact Center.
+                                     </li>
+                                 </ul>
+                              </li>
+                        </ul>      
+                    </div>
+             </div>
+            </div> <!-- Div mensajes -->
+
+        </div> <!-- DIV col-md-6  #init -->
+        <div class="init col-md-6">
+            <h3 class="limit text-center">Dashboard</h3>
+            <div class="container-fluid">
+            <div id="dashboard" class="panel panel-default">
+                 <div class="panel-body">
+                      <ul class="list-group">
+                            <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 
+                              </li>
+                                        
+                                
+                            <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 
+                              </li>
+                              <li class="well">Pendiete 4:<br/> 
+                                 Fecha: 03/10/2015
+                                 
+                              </li>
+                        </ul>      
+                    </div>
+             </div>
+            </div> <!-- Div dashboard -->
+            
+            
+        </div>
+    </div>    
+       
+   </div> <!-- DIV CONTAINER -->
+   
+    <!-- js Jquery -->
+    <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
+    <!-- js boostrap -->
+    <script type="text/javascript" src="/ui/js/bootstrap.min.js"> </script>    
+    <!-- js CIAM -->
+    <script type="text/javascript" src="/ui/js/ciam.js"></script>  
+</body>
+</html>

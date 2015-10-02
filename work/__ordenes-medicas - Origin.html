@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CIAM</title>
+    <!-- Estilos fonts -->    
+    <link rel="stylesheet" href="./ui/css/font-awesome.min.css" type="text/css">    
+    <!-- Estilos bootstrap -->
+    <link rel="stylesheet" href="./ui/css/bootstrap.min.css" type="text/css">  
+    <!-- Estilos bootstrap vertical menu -->  
+    <link rel="stylesheet" href="./ui/css/bootstrap-vertical-menu.css">
+    <!-- Estilos ciam -->    
+    <link rel="stylesheet" href="./ui/css/ciam.css" type="text/css">
+</head>
+<body>
+   
+   <div class="container-fluid">
+    <header class="row">
+        <div class="col-md-4">
+            {LOGO CIAM}
+            
+        </div>
+        <div class="col-md-8">
+            <ul id="menu-principal">
+                <li><a href="">ICO 1 </a></li>
+                <li><a href="">ICO 2 </a></li>
+                <li><a href="">ICO 3 </a></li>
+                <li><a href="">ICO 4 </a></li>
+                <li><a href="">ICO 5 </a></li>
+                <li><a href="">ICO 6 </a></li>
+                <li><a href="">Dr.Nombre </a></li>
+                <li><a href="">ICO 8 </a></li>
+                <li><a href="">ICO 9 </a></li>
+                <li><a href="">ICO 10 </a></li>
+            </ul> <!-- Principal -->          
+            
+        </div>
+    </header> <!-- HEADER ROW -->  
+    
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="">Atencion Médica</a></li>
+                <li><a href="">Agenda de Dia</a></li>
+                <li><a href="">Calculadoras</a></li> 
+                <li><a href="">Herramientas</a></li> 
+                <li><a href="">Ayuda Nutrición</a></li> 
+            </ul>
+        </nav>
+    </div> <!-- DIV ROW-->
+    
+    <div class="row">
+        
+        <div class="col-md-5">
+            <ul id="menu-card">
+                <li>{FOTO}</li>
+                <li>{NOMBRE_PACIENTE}</li>
+                <li>{LOGO}</li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            
+        </div>
+        <div class="col-md-5">
+            <ul id="menu-acciones">
+            <li>{HORA}</li>
+            <li>{INTERRUMPIR}</li>
+            <li>{CONCLUIR}</li>
+            <li>{TRANSFERIR}</li>
+            <li>{PAUSAR}</li>
+            </ul>
+        </div>
+        
+        
+    </div> <!-- DIV ROW -->
+    
+    <div class="row">
+     <div class="col-md-1">
+        <nav class="navbar-vertical-left">
+            <ul type="list" id="menu-izquierda" class="nav navbar-nav">
+               <li><i class="fa fa-fw fa-lg fa-bars"></i></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-history"></i>Historial</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-arrow-left"></i>Antecedentes</a></li>
+               <li ><a href=""><i class="fa fa-fw fa-lg fa-heart"></i>Signos vitales</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-bar-chart"></i>Viariables</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-question-circle"></i>Motivo de Consulta</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-pencil-square"></i>Exámen Físico</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-medkit"></i>Diagnóstico</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-stethoscope"></i>Órdenes Médicas</a></li>
+               <li><a href=""><i class="fa fa-fw fa-lg fa-user-md"></i>Seguro</a></li>                
+            </ul>
+        </nav> <!-- Nav col md 1-->
+        
+        </div>
+    
+    
+        <div class="col-md-8">
+           
+               <div  class="folders-container">
+                <ul id="tabs"  class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active">
+                       <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+                        Laboratorios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+                        Medicamentos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                            Procedimientos
+                        </a>
+                    </li>
+                </ul> <!-- nav Tabs -->
+                <div class="tab-content">
+                    <div id="tab-1" class="col-md-12 tab-pane active">
+                       <div class="favoritos col-md-5">
+                           Favoritos
+                       </div>
+                       <div class="detalle-favoritos col-md-7">
+                           Detalle favoritos
+                       </div>
+                    </div>
+                    <div id="tab-2" class="col-md-12 tab-pane">
+                        Medicinas
+                    </div>
+                    <div id="tab-3" class="col-md-12 tab-pane">
+                        <div class="insumos col-md-5">
+                            Insumos
+                        </div>
+                        <div class="col-md-7">
+                            Procedimientos
+                        </div>
+                    </div> 
+                </div> <!-- div Tab container -->
+            </div> <!-- Div Folders Container-->            
+        </div><!-- Div Col md 8-->
+        <div class="col-md-3">
+            <h2>Órdenes Médicas</h2>          
+        </div><!-- Div col md 3-->        
+    </div> <!-- Div Row-->    
+   </div> <!-- DIV CONTAINER -->
+   
+    <!-- js Jquery -->
+    <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
+    <!-- js boostrap -->
+    <script type="text/javascript" src="/ui/js/bootstrap.min.js"> </script>    
+    <!-- js CIAM -->
+    <script type="text/javascript" src="/ui/js/ciam.js"></script>  
+    <script>
+    $(document).ready(function() {
+      $('a').click(function(event) {
+        $('a').removeClass('selected');
+        $(this).addClass('selected');
+        event.preventDefault();
+      })
+    });
+  </script>  
+</body>
+</html>

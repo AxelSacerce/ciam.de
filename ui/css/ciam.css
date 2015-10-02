@@ -1,0 +1,186 @@
+/* uni. header row */
+
+
+
+    
+body{
+    font-family: helvetica;
+}
+
+body, .navbar-default, .navbar-vertical-left ul.navbar-nav, .navbar-vertical-left, ul#menu-principal > li > a{
+    background: #0067b1;
+    color: #fff;
+}
+
+ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, #mensaje div.panel-body>ul, #dashboard div.panel-body>ul{
+    list-style-type: none;  
+}
+
+ul#menu-principal, ul#menu-acciones{
+   float: right; 
+}
+
+ul#menu-principal li, ul#menu-principal li a, ul#menu-card li, ul#menu-acciones li{
+    display: block;    
+}
+
+ul#menu-principal > li{
+    padding-right:20px ;
+}
+
+ul#menu-principal li, ul#menu-card li,  ul#menu-card li, ul#menu-acciones li, .navbar-vertical-left {
+    float:left;
+}
+
+ul#menu-principal li a, ul#menu-principal li form {
+   
+    line-height: 50px;
+}
+
+.navbar-default .navbar-nav > li > a, .nav-tabs > li > a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+    background: #fff;
+    color: #0067b1;
+}
+
+/* end - header row */
+
+
+.row h2{
+    font-size: 20px;
+}
+
+.favoritos, .insumos{
+    border-right: 1px solid #fff;
+}
+
+.tab-content div{
+    min-height: 250px;
+    
+}
+
+.folders-container ul#tabs > li.active a{
+    color: #0067b1;
+    
+}
+
+.folders-container ul#tabs > li a:hover{
+    color: #0067b1;
+    background: #fff;
+    
+}
+
+
+
+/*  Inicia Menú vertical */
+nav#menu-izquierda-container.navbar.navbar-default{
+    border: none;
+}
+#menu-izquierda-container{
+    z-index: 1;
+}
+#menu-izquierda li a{
+        color: #FFF;
+}
+#menu-izquierda li.active a:hover{
+    background-color: #FFF;
+}
+#menu-izquierda li a:hover, #menu-izquierda li.active a:hover{
+        color: #0067b1;
+}
+
+#menu-izquierda li a span{
+  -webkit-transition: -webkit-transform .3s;
+     -moz-transition:    -moz-transform .3s;
+          transition:         transform .3s;
+
+  -webkit-transform: translateX(-100px);
+     -moz-transform: translateX(-100px);
+          transform: translateX(-100px);
+    display: none;
+}
+
+
+
+#menu-izquierda:hover > li > a span{
+  -webkit-transition: -webkit-transform .3s;
+     -moz-transition:    -moz-transform .3s;
+          transition:         transform .3s;
+
+  -webkit-transform: translateX(1px);
+     -moz-transform: translateX(1px);
+          transform: translateX(1px);
+    display: block;
+    margin-top: -20px;
+    margin-left: 32px;
+    min-width: 140px;
+}
+figure{
+  margin-bottom: 20px;
+}
+/* Finaliza vertical menu */
+
+/* inicia acordeon */
+#ficha div#acordeon-1.collapse{
+     -webkit-transition: -webkit- transform .3s;
+     -moz-transition:    -moz-    transform .3s;
+          transition:             transform .3s;
+    
+}
+/* finaliza acordeon */
+
+
+
+
+/* pagina principal */
+
+h3.limit{
+    border-bottom: 1px solid #fff;
+}
+
+#content-message-dashboard .init {
+    /*text-align:center;*/
+    /*border: 1px solid #fff;*/
+    max-height: 500px;
+
+}
+
+#mensaje, #dashboard{
+    overflow-x:scroll;
+}
+
+#mensaje div.panel-body>ul, #dashboard div.panel-body>ul{
+    
+    color: #0067b1;
+    max-height: 415px;
+    
+    -webkit-border-radius:  5px;
+    -moz-border-radius:     5px;
+    border-radius:          5px;    
+    padding-top:           25px;
+}
+
+.well:hover{
+    
+    -webkit-box-shadow: 5px 4px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    5px 4px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         5px 4px 22px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+    
+}
+
+*/
+/* fin pagina Principal  */
+
+
+
+
+
+
+
+

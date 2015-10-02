@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>CIAM</title>
+    <!-- Estilos fonts -->    
+    <link rel="stylesheet" href="./ui/css/font-awesome.min.css" type="text/css">    
+    <!-- Estilos bootstrap -->
+    <link rel="stylesheet" href="./ui/css/bootstrap.min.css" type="text/css">  
+    <!-- Estilos bootstrap vertical menu -->  
+    <link rel="stylesheet" href="./ui/css/bootstrap-vertical-menu.css">
+    <!-- Estilos ciam -->    
+    <link rel="stylesheet" href="./ui/css/ciam.css" type="text/css">
+</head>
+<body>
+   
+   <div class="container-fluid">
+    <header class="row">
+        <div class="col-md-4">
+            {LOGO CIAM}
+            
+        </div>
+        <div class="col-md-8">
+            <ul id="menu-principal">
+                <li><a href="">ICO 1 </a></li>
+                <li><a href="">ICO 2 </a></li>
+                <li><a href="">ICO 3 </a></li>
+                <li><a href="">ICO 4 </a></li>
+                <li><a href="">ICO 5 </a></li>
+                <li><a href="">ICO 6 </a></li>
+                <li role="presentation" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dr.Nombre<i class="fa fa-fw fa-lg fa-sort-desc"></i>
+                    </a>                    
+                        <ul class="dropdown-menu">
+                            <li>
+                            <a href="#">
+                                Modificar Perfil
+                                <i class="fa fa-pencil"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Cerrar Sesión
+                                <i class="fa fa-user-times"></i>
+                                </a>
+                            </li>
+                        </ul>
+               </li>
+                <li><a href="">ICO 8 </a></li>
+                <li><a href="">ICO 9 </a></li>
+                <li><a href="">ICO 10 </a></li>
+            </ul> <!-- Principal -->          
+            
+        </div>
+    </header> <!-- HEADER ROW -->  
+    
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="">Atencion Médica</a></li>
+                <li><a href="">Agenda de Dia</a></li>
+                <li><a href="">Calculadoras</a></li> 
+                <li><a href="">Herramientas</a></li> 
+                <li><a href="">Ayuda Nutrición</a></li> 
+            </ul>
+        </nav>
+    </div> <!-- div Row-->
+    <div class="container-fluid">
+        
+    </div>
+   <div class="row">
+       <div class="col-md-3">
+           <div id="ficha" class="row">
+              <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-1">
+                   <div class="col-md-4">
+                       <span>{HORA}</span>
+                   </div>
+                   <div class="col-md-4">
+                       {FOTO}
+                   </div>
+                   <div class="col-md-4">
+                       {ICONOS}
+                   </div>
+                   <div class="col-md-12">
+                       <p>{NOMBRE PACIENTE}</p>
+                       <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
+
+                   </div>
+                </div>
+                <div id="acordeon-1" class="collapse" data-toggle="false">
+                      <div class="container col-md-12">
+                           <p>{DATOS_EXTRA}</p>
+                           <p>{DATOS_EXTRA}</p>
+                       </div>
+                </div>
+                
+                <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-2">
+                   <div class="col-md-4">
+                       <span>{HORA}</span>
+                   </div>
+                   <div class="col-md-4">
+                       {FOTO}
+                   </div>
+                   <div class="col-md-4">
+                       {ICONOS}
+                   </div>
+                   <div class="col-md-12">
+                       <p>{NOMBRE PACIENTE}</p>
+                       <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
+
+                   </div>
+                </div>
+                <div id="acordeon-2" class="collapse" data-toggle="false">
+                      <div class="container col-md-12">
+                           <p>{DATOS_EXTRA}</p>
+                           <p>{DATOS_EXTRA}</p>
+                       </div>
+                </div>
+           </div>
+       </div> <!-- Fichas-->
+       <div class="col-md-9">
+           {CONTENIDO}
+       </div>
+       
+   </div> <!-- Div Row-->
+    
+       
+   </div> <!-- DIV CONTAINER -->
+   
+    <!-- js Jquery -->
+    <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
+    <!-- js boostrap -->
+    <script type="text/javascript" src="/ui/js/bootstrap.min.js"> </script>    
+    <!-- js CIAM -->
+    <script type="text/javascript" src="/ui/js/ciam.js"></script>  
+</body>
+</html>
