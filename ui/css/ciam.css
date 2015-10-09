@@ -14,19 +14,19 @@ body, .navbar-default, .navbar-vertical-left ul.navbar-nav, .navbar-vertical-lef
     
 }
 
-ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, #mensaje div.panel-body>ul, #dashboard div.panel-body>ul, .antecedentes, #horario, #data-fila{
+ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, #mensaje div.panel-body>ul, #dashboard div.panel-body>ul, .antecedentes, #horario, #data-fila, ul#llamada{
     list-style-type: none;  
 }
 
-ul#menu-principal, ul#menu-acciones{
+ul#menu-principal, ul#menu-acciones, ul#llamada{
    float: right; 
 }
 
-ul#menu-principal li, ul#menu-principal li a, ul#menu-card li, ul#menu-acciones li{
-    display: block;    
+ul#menu-principal li, ul#menu-principal li a, ul#menu-card li, ul#menu-acciones li, ul#llamada li {
+    display: inline-block;    
 }
 
-ul#menu-card li{
+ul#menu-card li, ul#llamada li{
     padding-right: 10px
 }
 
@@ -54,7 +54,7 @@ ul#menu-card li#nombre,ul#menu-card li#logo-gyt, #menu-acciones{
 
 
 
-ul#menu-principal > li, ul#menu-acciones > li{
+ul#menu-principal > li, ul#menu-acciones > li, ul#llamada{
     padding-right:20px ;
 }
 
@@ -192,6 +192,11 @@ hr.gen-color{
 /* inicia fila llamar siguiente */
 
 div#fila-llamar-siguiente{
+    
+    border-right: 1px solid #fff;
+}
+
+div#filaTransito{
     
     border-right: 1px solid #fff;
 }
