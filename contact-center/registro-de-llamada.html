@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>CIAM</title>
+    <!-- Estilos fonts -->    
+    <link rel="stylesheet" href="./ui/css/font-awesome.min.css" type="text/css">    
+    <!-- Estilos bootstrap -->
+    <link rel="stylesheet" href="./ui/css/bootstrap.min.css" type="text/css">  
+    <!-- Estilos bootstrap vertical menu -->  
+    <link rel="stylesheet" href="./ui/css/bootstrap-vertical-menu.css">
+    <!-- Estilos ciam -->    
+    <link rel="stylesheet" href="./ui/css/ciam.css" type="text/css">
+</head>
+<body>
+   
+   <div class="container-fluid">
+    <header class="row">
+        <div class="col-md-4 logo">
+            <img src="./ui/img/logo-min.png" alt="LOGO CIAM">
+            
+        </div>
+        <div class="col-md-8">
+            <ul id="menu-principal">
+                <li><a href=""><i class="fa fa-cogs fa-2x" title="Administración"></i></a></li>
+                <li><a href=""><i class="fa fa-calendar fa-2x" title="Calendario"></i> </a></li>
+                <li><a href=""><i class="fa fa-user-md fa-2x" title="Atención médica"></i> </a></li>
+                <li><a href=""><i class="fa fa-user fa-2x" title="Ficha Paciente"></i> </a></li>
+                <li><a href=""><i class="fa fa-list-alt fa-2x" title="Front Office"></i></a></li>
+                <li><a href=""><i class="fa fa-phone fa-2x" title="Contact center"></i></a></li>
+                <li><a href=""><i class="fa fa-credit-card fa-2x" title="Cobros"></i></a></li>
+                <li role="presentation" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dr.Nombre<i class="fa fa-fw fa-lg fa-sort-desc" title="Perfil"></i>
+                    </a>                    
+                        <ul class="dropdown-menu">
+                            <li>
+                            <a href="#">
+                                Modificar Perfil
+                                <i class="fa fa-pencil"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Cerrar Sesión
+                                <i class="fa fa-user-times"></i>
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href=""><i class="fa fa-question fa-2x" title="Ayuda"></i></a></li>
+                <li><a href=""><i class="fa fa-power-off fa-2x" title="Cerrar sesión"></i></a></li>
+            </ul> <!-- Principal -->          
+            
+        </div>
+    </header> <!-- HEADER ROW -->  
+    
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="">Iniciar llamada</a></li>
+                <li><a href="">Confirmar cita</a></li>
+                <li><a href="">Consultas</a></li> 
+                <li><a href="">Herramientas</a></li> 
+                 
+            </ul>
+        </nav>
+    </div> <!-- DIV ROW-->
+    
+   
+    
+    <div class="row">
+     <div class="col-md-12">
+           
+           <div class="col-md-3">
+               <i class="fa fa-3x fa-clock-o"></i><span> 15:20:63</span>
+            </div>
+        <div class="col-md-3">
+
+        </div>
+    
+        <div class="col-md-6">
+            <div class="row">            
+               
+                    <ul id="menu-acciones">
+                        <li><a href="#"><i class="fa fa-clipboard fa-3x" title="Nueva llamada"></i></a></li>
+                        <li><a href="#"><i class="fa fa-forward fa-3x" title="Seguimiento"></i></a></li>
+                        <li><a href="#"><i class="fa fa-calendar fa-3x" title="Registrar Cita"></i></a></li>
+                        <li><a href="#"><i class="fa fa-tty fa-3x" title="Iniciar Llamada"></i></a></li>
+                        <li><a href="#"><i class="fa fa-times-circle fa-3x" title="Detener / Cancelar"></i></a></li>
+                    </ul>
+                
+            </div> <!-- DIV ROW -->
+        </div> 
+     </div>       
+    </div> <!-- Div Row-->    
+    <hr>
+       
+       <div class="row">
+           
+           <div class="col-md-8">
+               <form class="form-horizontal" action ="" method="POST">
+                     <div class="form-group">
+                         <label for="inputTelefono" class="control-label col-xs-3">Numero de teléfono:</label>
+                         <div class="col-xs-8">
+                           <div class="input-group"> 
+                            <div class="input-group-addon"><i class="fa fa-lg fa-phone"></i></div>
+                             <input type="phone" class="form-control" placeholder="22432222">
+                             </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label for="inputTipoLlamada" class="control-label col-xs-3">Tipo de llamada:</label>
+                         <div class="col-xs-8">
+                           <div class="input-group"> 
+                            <div class="input-group-addon"><i class="fa fa-calendar-check-o"></i></div>
+                            <select name="" class="form-control"> 
+                               <option value="" disabled selected>Seleccione Tipo de Llamada...</option>
+                                <option value="">Cita</option>
+                                <option value="">Confirmar Cita</option>
+                            </select>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label for="inputMotivo" class="control-label col-xs-3">Motivo de Llamada:</label>
+                         <div class="col-xs-8">
+                             <textarea placeholder="Motivo de Llamada" row="3" class="form-control"></textarea>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label for="inputAccionRealizada" class="control-label col-xs-3">Acción Realizada:</label>
+                         <div class="col-xs-8">
+                             <textarea placeholder="Accion a Realizar" row="3" class="form-control"></textarea>
+                         </div>
+                     </div>
+                     <div class="form-group text-center">
+                         <div class="col-xs-2">
+                             <button type="submit" class="btn btn-success">Procesar</button>
+                         </div>
+                         <div class="col-xs-2 text-center">
+                             <button type="submit" class="btn btn-danger">Cancelar</button>
+                         </div>
+                     </div>
+                </form>
+               
+           </div>
+           
+           <div class="col-md-4">
+               
+            <i class="fa fa-3x fa-plus-circle"></i>    MENU AYUDA POR DEFINIR
+               
+           </div>
+       </div>        
+    
+    
+   </div> <!-- DIV CONTAINER -->
+   
+    <!-- js Jquery -->
+    <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
+    <!-- js boostrap -->
+    <script type="text/javascript" src="/ui/js/bootstrap.min.js"> </script>    
+    <!-- js CIAM -->
+    <script type="text/javascript" src="/ui/js/ciam.js"></script>  
+</body>
+</html>
