@@ -14,7 +14,11 @@ body, .navbar-default, .navbar-vertical-left ul.navbar-nav, .navbar-vertical-lef
     
 }
 
-ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, #mensaje div.panel-body>ul, #dashboard div.panel-body>ul, .antecedentes, #horario, #data-fila, ul#llamada{
+.logo-gyt{
+    display:block;
+}
+
+ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, #mensaje div.panel-body>ul, #dashboard div.panel-body>ul, .antecedentes, #horario, #data-fila, ul#llamada, #card{
     list-style-type: none;  
 }
 
@@ -30,7 +34,7 @@ ul#menu-card li, ul#llamada li{
     padding-right: 10px
 }
 
-ul#menu-card li#nombre,ul#menu-card li#logo-gyt, #menu-acciones{
+ul#menu-card li#nombre,ul#menu-card, #menu-acciones{
     margin-top: 10px;
     margin-bottom: 25px    
 }
