@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ciamWeb">
+<head>
+    <meta charset="UTF-8">
+    <title>CIAM</title>
+    <!-- Estilos fonts -->    
+    <link rel="stylesheet" href="./ui/css/font-awesome.min.css" type="text/css">    
+    <!-- Estilos bootstrap -->
+    <link rel="stylesheet" href="./ui/css/bootstrap.min.css" type="text/css">  
+    <!-- Estilos bootstrap vertical menu -->  
+    <link rel="stylesheet" href="./ui/css/bootstrap-vertical-menu.css">
+    <!-- Estilos ciam -->    
+    <link rel="stylesheet" href="./ui/css/ciam.css" type="text/css">
+</head>
+<body>
+   
+   <div class="container-fluid">
+    <header class="row">
+        <div class="col-md-4 logo">
+            <figure> <img src="./ui/img/logo-min.png" alt="LOGO CIAM"></figure>
+            
+        </div>
+        
+        <div class="col-md-8">
+            <ul id="menu-principal">
+                <li><a href=""><i class="fa fa-cogs fa-2x" title="Administración"></i></a></li>
+                <li><a href=""><i class="fa fa-calendar fa-2x" title="Calendario"></i> </a></li>
+                <li><a href=""><i class="fa fa-user-md fa-2x" title="Atención médica"></i> </a></li>
+                <li><a href=""><i class="fa fa-user fa-2x" title="Ficha Paciente"></i> </a></li>
+                <li><a href=""><i class="fa fa-list-alt fa-2x" title="Front Office"></i></a></li>
+                <li><a href=""><i class="fa fa-phone fa-2x" title="Contact center"></i></a></li>
+                <li><a href=""><i class="fa fa-credit-card fa-2x" title="Cobros"></i></a></li>
+                <li role="presentation" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dr.Nombre<i class="fa fa-fw fa-lg fa-sort-desc" title="Perfil"></i>
+                    </a>                    
+                        <ul class="dropdown-menu">
+                            <li>
+                            <a href="#">
+                                Modificar Perfil
+                                <i class="fa fa-pencil"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Cerrar Sesión
+                                <i class="fa fa-user-times"></i>
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href=""><i class="fa fa-question fa-2x" title="Ayuda"></i></a></li>
+                <li><a href=""><i class="fa fa-power-off fa-2x" title="Cerrar sesión"></i></a></li>
+            </ul> <!-- Principal -->          
+            
+        </div>
+    </header> <!-- HEADER ROW -->  
+    
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="">Atencion Médica</a></li>
+                <li><a href="">Agenda de Dia</a></li>
+                <li><a href="">Calculadoras</a></li> 
+                <li><a href="">Herramientas</a></li> 
+                <li><a href="">Ayuda Nutrición</a></li> 
+                <li><a href="">Signos vitales</a></li>
+            </ul>
+        </nav>
+    </div> <!-- div Row-->
+   
+    <div id="botonera-fila" class="row">
+        <div id="fila-llamar-siguiente" class="col-md-3">
+            <div class="col-sm-3">
+                <a href="#"><i class="fa fa-arrow-right fa-3x"> </i></a>
+            </div>
+            <div class="col-sm-4">
+                Llamar Siguiente
+            </div>
+            <div class="col-sm-4">
+                <ul id="horario">
+                    <li>15:25:00</li>
+                    <li>06/10/2015</li>
+                </ul>
+                <div class="col-sm-1">
+                   <!-- div de relleno --> 
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-9">
+            <div class="col-sm-3">
+               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo"></figure>
+            </div>
+            <div class="col-sm-4">
+                <ul id="data-fila">
+                    <li><strong>María del Cárme Azurdia Domínguez</strong></li>
+                    <li>Reconsulta</li>
+                    <li>Ticket # A777</li>
+                </ul>
+            </div>
+            
+            <div class="col-sm-2">
+                <!-- Div de relleno -->
+            </div>
+            
+            <div class="col-sm-2">
+                <i class="fa fa-caret-up fa-4x"> </i>  <i class="fa fa-caret-down fa-4x"> </i>
+            </div>
+        </div>
+    </div> <!-- Div Row -->
+    <hr>
+   <div class="row">
+       <div class="col-md-3">
+           <div id="ficha" class="row ">
+               <div class="panel-group" role=tablist aria-multiselectable="true">
+                <div id="contenedor-fichas" class="panel panel-default container-fluid" >
+                    
+                     
+                     <div class="panel-body well">
+                     <div class="row">
+                      <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-1">
+                           <div class="col-sm-4 ">
+                               <span>13:25:33</span>
+                           </div>
+                           <div class="col-sm-4">
+                               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo-ficha"></figure>
+                           </div>
+                           <div class="col-sm-4">
+                               {ICONOS}
+                           </div>
+                           <div id="data-medical" class="col-sm-12">
+                               <p>{NOMBRE PACIENTE}</p>
+                               <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
+
+                           </div>
+                        </div>
+                        <div id="acordeon-1" class="collapse" data-toggle="false">
+                              <div id="content-extra" class="container col-md-12">
+                                  <hr class="gen-color">
+                                   <p>{DATOS_EXTRA}</p>
+                                   <p>{DATOS_EXTRA}</p>
+
+                               </div>
+                        </div>
+                        </div>
+                   </div>
+                   
+                     <div class="panel-body well">
+                      <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-2">
+                           <div class="col-md-4 ">
+                               <span>13:25:33</span>
+                           </div>
+                           <div class="col-md-4">
+                               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo-ficha"></figure>
+                           </div>
+                           <div class="col-md-4">
+                               {ICONOS}
+                           </div>
+                           <div id="data-medical" class="col-md-12">
+                               <p>{NOMBRE PACIENTE}</p>
+                               <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
+
+                           </div>
+                        </div>
+                        <div id="acordeon-2" class="collapse" data-toggle="false">
+                              <div id="content-extra" class="container col-md-12">
+                                  <hr class="gen-color">
+                                   <p>{DATOS_EXTRA}</p>
+                                   <p>{DATOS_EXTRA}</p>
+
+                               </div>
+                        </div>
+                   </div>
+                   
+                   <div class="panel-body well">
+                      <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-3">
+                           <div class="col-md-4 ">
+                               <span>13:25:33</span>
+                           </div>
+                           <div class="col-md-4">
+                               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo-ficha"></figure>
+                           </div>
+                           <div class="col-md-4">
+                               {ICONOS}
+                           </div>
+                           <div id="data-medical" class="col-md-12">
+                               <p>{NOMBRE PACIENTE}</p>
+                               <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
+
+                           </div>
+                        </div>
+                        <div id="acordeon-3" class="collapse" data-toggle="false">
+                              <div id="content-extra" class="container col-md-12">
+                                  <hr class="gen-color">
+                                   <p>{DATOS_EXTRA}</p>
+                                   <p>{DATOS_EXTRA}</p>
+
+                               </div>
+                        </div>
+                   </div>
+                   
+                   
+                   
+                   
+                   
+            </div>
+            
+            <div id="atenciones" class="col md-4">
+                <ul id="atencion">
+                    <li>Atendidos: 14</li>
+                    <li>Esperando: 5</li>
+                    <li>en Hold: 1</li>
+                </ul>
+            </div>
+            </div>
+           </div>
+       </div> <!-- Fichas-->
+       <div class="col-md-9">
+           <h2 class="limit">Historial</h2>
+           
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-sm-12 header-s" ng-controller="TooltipDemoCtrl">
+                       <table class="table table-striped table-bordered ">
+                           <tr>
+                           <th>{Filtro}</th>
+                           <th>{Filtro}</th>
+                           <th>{Filtro}</th>
+                           <th>{Filtro}</th>
+                           <th>{Filtro}</th>
+                           <th>{Filtro}</th>
+                           </tr>
+                       </table>
+                   </div>
+                   <div id="espaciador" class="col-sm-12">
+                       <!-- Div espaciador -->
+                   </div>
+                   <div class="col-sm-12 content-f" ng-controller="TooltipDemoCtrl">
+                       <table class="table table-bordered table-striped">
+                           <tr>
+                           <th>Fecha <i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></th>
+                               <th>Especialidad<i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></th>
+                           <th>Doctor(a)</th>
+                           <th>Diagnóstico</th>
+                           <th>Medicamento</th>
+                           <th>Laboratorios</th>
+                           </tr>
+                           
+                           <tr>
+                           <td>21/09/2010 </td>
+                           <td><a href="#" uib-tooltip-html="htmlTooltip">Tramaumatología</a></td>
+                           <td>Dr. Tejada</td>
+                           <td>Fractura</td>
+                           <td>Diclofenaco</td>
+                           <td>Rayos X</td>
+                           </tr>
+                           
+                           <tr>
+                           <td>19/08/2010 </td>
+                           <td>Tramaumatología</td>
+                           <td>Dr. González</td>
+                           <td>Fractura yzo</td>
+                           <td>Trimetopin</td>
+                           <td>------</td>
+                           </tr>
+                           
+                           <tr>
+                           <td>02/07/2010 </td>
+                           <td>Tramaumatología</td>
+                           <td>Dr. González</td>
+                           <td>Fractura yzo</td>
+                           <td>Trimetopin</td>
+                           <td>------</td>
+                           </tr>
+                           
+                           <tr>
+                           <td>02/02/2010 </td>
+                           <td>Tramaumatología</td>
+                           <td>Dr. González</td>
+                           <td>Fractura yzo</td>
+                           <td>Trimetopin</td>
+                           <td>------</td>
+                           </tr>
+                       </table>
+                   </div>
+                   <div id="espaciador" class="col-sm-12">
+                       <!-- Div espaciador -->
+                   </div>
+                   <div class="col-sm-12">
+                       
+                      
+                      
+                      <div class="row">
+                         
+                          
+                              <div class="col-xs-6">
+                                    <h2 class="limit">Antecedentes</h2> 
+                                    
+                                   <!------>         
+                                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                       <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                              <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                  Quirurgicos
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                      <ul class="antecedentes">
+                                                          <li>Cirugía uno</li>
+                                                          <li>Cirugía dos</li>
+                                                          <li>Cirugía tres</li>
+                                                      </ul>
+                                              </div>
+                                            </div>
+                                       </div>
+                                       
+                                       <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                              <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Familiares
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                              <div class="panel-body">
+                                                      <ul class="antecedentes"> 
+                                                          <li>Diabetes</li>
+                                                          <li>Cardiaco</li>
+                                                          <li>Cirugía tres</li>
+                                                      </ul>
+                                              </div>
+                                            </div>
+                                       </div>
+                                    </div>                
+                                                            
+                                 <!--------->
+                                  
+                              </div>
+                              <div class="col-xs-6">
+                                  <h2 class="limit">Signos vitales</h2> 
+                                  <table class="table table-striped table-bordered content-f">
+                                      <tr>
+                                          <td>Peso:</td>
+                                          <td>165 Lbs.</td>
+                                          
+                                      </tr>
+                                      
+                                      <tr>
+                                          <td>Estatura:</td>
+                                          <td>180 cms.</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>Presión arterial:</td>
+                                          <td>90 Rps.</td>                                          
+                                      </tr>
+                                      <tr>
+                                          <td>Temperatura</td>
+                                          <td>30°C</td>                                          
+                                      </tr>
+                                  </table>
+                                                  
+                                  
+                              </div>
+                          
+                          
+                      </div><!--Div Row-->
+                      
+                      
+                       
+                       
+                       
+                   </div>
+                   
+                   <div class="col-md-4">
+                       <a href="#" class="btn btn-success btn-block">Llamar</a>
+                   </div>
+                   <div id="espaciador" class="col-md-12">
+                       <!-- Div espaciador -->
+                   </div>
+                   
+               </div>
+               
+           </div>
+       </div>
+       
+   </div> <!-- Div Row-->
+    
+       
+   </div> <!-- DIV CONTAINER -->
+   
+    <!-- Angular -->
+    <script type="text/javascript" src="ui/js/angular.min.js"></script>  
+    <!-- js Jquery -->
+    <script type="text/javascript" src="ui/js/jquery-1.11.3.min.js"> </script>    
+    <!-- js boostrap -->
+    <script type="text/javascript" src="ui/js/bootstrap.min.js"> </script>    
+    <!-- js CIAM -->
+    <script type="text/javascript" src="ui/js/ciam.js"></script>  
+    <!-- js ui-bootstrap -->
+    <script type="text/javascript" src="ui/js/ui-bootstrap-0.14.0.min.js"></script>  
+   
+    <script>
+        var app = angular.module('ciamWeb',['']);
+    </script>
+</body>
+</html>
