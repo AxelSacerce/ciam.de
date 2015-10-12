@@ -3,7 +3,8 @@ body{
     font-family: helvetica;
 }
 
-body, .navbar-default, .navbar-vertical-left ul.navbar-nav, .navbar-vertical-left, ul#menu-principal > li > a{
+body, .navbar-default, .navbar-vertical-left ul.navbar-nav, 
+.navbar-vertical-left, ul#menu-principal > li > a{
     background: #0067b1;
     color: #fff;
 }
@@ -18,7 +19,9 @@ body, .navbar-default, .navbar-vertical-left ul.navbar-nav, .navbar-vertical-lef
     display:block;
 }
 
-ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, #mensaje div.panel-body>ul, #dashboard div.panel-body>ul, .antecedentes, #horario, #data-fila, ul#llamada, #card{
+ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, 
+#mensaje div.panel-body>ul, #dashboard div.panel-body>ul, 
+.antecedentes, #horario, #data-fila, ul#llamada, #card{
     list-style-type: none;  
 }
 
@@ -276,6 +279,34 @@ h3.limit, h2.limit{
 #atenciones{
     
     margin-top:25px
+}
+
+
+
+
+/* Ingreso antecedentes */
+
+
+a.nuevo-antecedente, a.add-signo-vital{
+    text-decoration: none;
+    color: #FFF;
+}
+
+a.nuevo-antecedente:hover, a.add-signo-vital:hover{
+    text-decoration: none;
+    color: #FFF;   
+}
+
+a.add-signo-vital > i{
+    margin-top:20px;
+}
+
+
+.image-style{
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+
 }
 
 
