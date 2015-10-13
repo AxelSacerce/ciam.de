@@ -309,6 +309,7 @@ a.add-signo-vital > i{
 
 }
 
+
 #acciones > ul > li{
     
     border: 1px solid #cecece;
@@ -324,6 +325,12 @@ a.add-signo-vital > i{
     background: rgba(255,255,255,0.2);
 
     
+
+.nuevo-examen-fisico{
+  text-decoration: none;
+    color: #FFF;    
+    text-align: left;
+
 }
 
 
