@@ -76,13 +76,13 @@
         <nav id="menu-izquierda-container" class="navbar navbar-default">
             <menu type="list" id="menu-izquierda" class="nav nav-pills"  >
                <!--<li id="menu-bars"><i class="fa fa-fw fa-lg fa-bars"></i></li>-->
-               <li class="active">
+               <li>
                    <a  href="">
                        <i class="fa fa-fw fa-lg fa-history"></i>
                        <span>Historial</span>
                     </a>
                 </li>
-               <li>
+               <li >
                     <a href="" >
                        <i class="fa fa-fw fa-lg fa-arrow-left"></i>
                        <span>Antecedentes</span>
@@ -100,7 +100,7 @@
                     <span>Viariables</span>
                    </a>
                 </li>
-               <li>
+               <li class="active">
                    <a href="" >
                        <i class="fa fa-fw fa-lg fa-question-circle"></i>
                        <span>Motivo de Consulta</span>
@@ -154,7 +154,7 @@
         <div class="col-md-1 text-left">
           <figure class="logo-gyt"><img src="./ui/img/gyt-min.png" alt="LOGO G&T"></figure>
         </div>
-         <div id="acciones" class="col-md-6">
+          <div id="acciones" class="col-md-6">
             <ul id="menu-acciones">
            
                 <li><a href="#" title="Interrumpir"><i class="fa fa-times fa-2x"></i></a></li>
@@ -166,55 +166,71 @@
         
         
     </div> <!-- DIV ROW -->
-        <div class="col-md-8">
-           
-               <div  class="folders-container">
-                <ul id="tabs"  class="nav nav-tabs" data-tabs="tabs">
-                    <li class="active">
-                       <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
-                        Laboratorios
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
-                        Medicamentos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
-                            Procedimientos
-                        </a>
-                    </li>
-                </ul> <!-- nav Tabs -->
-                <div class="tab-content">
-                    <div id="tab-1" class="col-md-12 tab-pane active">
-                       <div class="favoritos col-md-5">
-                           Favoritos
-                       </div>
-                       <div class="detalle-favoritos col-md-7">
-                           Detalle favoritos
-                       </div>
-                    </div>
-                    <div id="tab-2" class="col-md-12 tab-pane">
-                        Medicinas
-                    </div>
-                    <div id="tab-3" class="col-md-12 tab-pane">
-                        <div class="insumos col-md-5">
-                            Insumos
+        <div class="row">
+            <h2 class="limit">Signos vitales</h2>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="container-fluid">
+                <h3>Motivo de la consulta</h3>
+                
+                <div id="mensaje" class="panel panel-default"  style="overflow:scroll">
+                 <div class="panel-body">
+                      <ul class="list-group">
+                            <li class="well">Motivo Consulta 1 <span><a href="#"><i class="fa fa-trash"></i></a></span>
+                              </li>
+                                        
+                                
+                            <li class="well">Motivo Consulta 1 <span><a href="#"><i class="fa fa-trash"></i></a></span>
+                              </li>
+                              
+                              <li class="well">Motivo Consulta 1 <span><a href="#"><i class="fa fa-trash"></i></a></span>
+                              </li>
+                              
+                        </ul>      
+                    </div>    
+             </div>
+                 
+
+                </div>
+                div.col-md-6
+               <form class="form-horizontal" method="POST" action="">
+                    <div class="form-group">
+                        <div class="col-xs-6">
+                        <div class="input-group">
+
+                        <input class="form-control" type="text" placeholder="Ingrese antecedente" name="nombre">
+                        <div class="input-group-addon">
+                        <i class="fa fa-arrow-circle-o-right"></i>
                         </div>
-                        <div class="col-md-7">
-                            Procedimientos
                         </div>
-                    </div> 
-                </div> <!-- div Tab container -->
-            </div> <!-- Div Folders Container-->            
-        </div><!-- Div Col md 8-->
-        <div class="col-md-4">
-            <h2>Órdenes Médicas</h2>          
-        </div><!-- Div col md 3-->
+                        </div>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <div class="col-xs-6">
+                        <button class="btn btn-success" type="submit">Grabar</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+              <div class="col-sm-8">
+                  <div class="container-fluid">
+                    <h3>Historial de la enfermedad</h3>
+                    
+                  </div>
+                  </div>
+
+              
+              </div>
+              
+
+            </div>
+          </div>       
+        </div><!-- Div row-->
     </div>        
     </div> <!-- Div Row-->    
-   </div> <!-- DIV CONTAINER -->
+   
    
     <!-- js Jquery -->
     <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
