@@ -1,6 +1,7 @@
 /* uni. header row */    
 body{
     font-family: helvetica;
+    font-size: 12px;
 }
 
 body, .navbar-default, .navbar-vertical-left ul.navbar-nav, 
@@ -339,6 +340,10 @@ a.add-signo-vital > i{
     color: #FFF;    
     text-align: left;
 
+}
+
+.separador{
+    margin-bottom: 15px;
 }
 
 
