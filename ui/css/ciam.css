@@ -21,7 +21,7 @@ body, .navbar-default, .navbar-vertical-left ul.navbar-nav,
 
 ul#menu-principal, ul#munu-card, ul#menu-acciones, menu#menu-izquierda, 
 #mensaje div.panel-body>ul, #dashboard div.panel-body>ul, 
-.antecedentes, #horario, #data-fila, ul#llamada, #card{
+.antecedentes, #horario, #data-fila, ul#llamada, #card, ul#atencion{
     list-style-type: none;  
 }
 
@@ -307,6 +307,23 @@ a.add-signo-vital > i{
     width: 250px;
     height: auto;
 
+}
+
+#acciones > ul > li{
+    
+    border: 1px solid #cecece;
+    padding: 6px 15px 7px 14px;
+   
+    
+    border-radius: 8px;
+    margin-left: 8px
+    
+}
+
+#acciones > ul > li:hover{
+    background: rgba(255,255,255,0.2);
+
+    
 }
 
 

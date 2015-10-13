@@ -94,13 +94,13 @@
         <div class="col-md-1 text-left">
           <figure class="logo-gyt"><img src="./ui/img/gyt-min.png" alt="LOGO G&T"></figure>
         </div>
-        <div class="col-md-6">
+            <div id="acciones" class="col-md-5">
             <ul id="menu-acciones">
            
-            <li><i class="fa fa-times-circle fa-3x"></i></li>
-            <li><i class="fa fa-check-circle fa-3x"></i></li>
-            <li><img src="./ui/img/transferir.png" alt="" ></li>
-            <li><img src="./ui/img/pausar.png" alt="" width="auto" height="44"></li>
+                <li><a href="#" title="Interrumpir"><i class="fa fa-times fa-2x"></i></a></li>
+                <li><a href="#" title="Concluir"><i class="fa fa-check fa-2x"></i></a></li>
+            <li><a href="#" title="Transferir"><i class="fa fa-arrow-right fa-lg"></i><i class="fa fa-user fa-2x"></i></a></li>
+            <li><a href="#" title="Pausar"><i class="fa fa-pause fa-2x"></i></a></li>
             </ul>
         </div>
         
@@ -110,12 +110,13 @@
     </div><!-- Div row--> 
         <div class="row">
             <h2 class="limit">Agregar Signos vitales</h2>
-          <div class="row" id="add-signos">
+          <div class="col-md-12" id="add-signos">
             <div class="container">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <div class="row">
-                  <div class="col-md-6">
+                  
                           <form class="form-horizontal" action ="" method="POST">
+                                  <div class="col-sm-6">
                                    <div class="form-group">
                                     <div class="col-xs-1"><i class="fa fa-cubes"></i> </div>
                                       <div class="col-xs-5">
@@ -155,14 +156,12 @@
                                            <input type="checkbox" name="sVitales" value="otros" class="form-control">                              
                                            </div>
                                        </div>                         
-                                   </div>
-                                   
-                               
-                              </div> <!-- Fila uno formulario agregar sigoos col-md-6 --> 
-
-
-                              <div class="col-md-6">
-                        
+                                  </div>
+                                    </div> <!-- col-md-6 -->
+                                  
+                                  <div class="col-sm-6"> 
+                                  <div class="form-group">                             
+                                                      
                                    
                                     <div class="col-xs-1"><i class="fa fa-cubes"></i> </div>
                                       <div class="col-xs-5">
@@ -206,34 +205,18 @@
 
                                    <div class="col-xs-12 text-left">
                                          <div class="input-group"> 
-                                           <input type="sbumit" name="sVitales" value="otros" class="btn btn-success">                              
+                                           <input type="sbumit" name="sVitales" value="Agregar" class="btn btn-success">                              
                                            </div>
-                                       </div>                     
-                                   
+                                       </div>
+                                    </div>  <!-- col-md-6 -->                                
                                 </form>
-                              </div>
-
-
-
-
-
-                            </div>
-                          </div>
-                     </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-
-          </div>       
-        
-           
-    </div> <!-- Div Row-->    
-   </div> <!-- DIV CONTAINER -->
-   
+                            
+                            </div> <!-- Row -->
+                          </div> <!-- col-md-12 -->
+                     </div> <!-- Container -->
+                  </div> <!-- Row id="add-signos" -->
+                </div> <!-- Row -->
+              </div> <!-- Container fluid -->
     <!-- js Jquery -->
     <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
     <!-- js boostrap -->
