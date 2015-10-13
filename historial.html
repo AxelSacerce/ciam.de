@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="ciamWeb">
+<html lang="es" ng-app>
 <head>
     <meta charset="UTF-8">
     <title>CIAM</title>
@@ -16,11 +16,10 @@
    
    <div class="container-fluid">
     <header class="row">
-        <div class="col-md-4 logo">
-            <figure> <img src="./ui/img/logo-min.png" alt="LOGO CIAM"></figure>
+        <div  class="col-md-4 logo">
+            <img  src="./ui/img/logo-min.png" alt="LOGO CIAM">
             
         </div>
-        
         <div class="col-md-8">
             <ul id="menu-principal">
                 <li><a href=""><i class="fa fa-cogs fa-2x" title="Administración"></i></a></li>
@@ -51,7 +50,7 @@
                 </li>
                 <li><a href=""><i class="fa fa-question fa-2x" title="Ayuda"></i></a></li>
                 <li><a href=""><i class="fa fa-power-off fa-2x" title="Cerrar sesión"></i></a></li>
-            </ul> <!-- Principal -->          
+            </ul> <!-- Principal -->           
             
         </div>
     </header> <!-- HEADER ROW -->  
@@ -67,155 +66,110 @@
                 <li><a href="">Signos vitales</a></li>
             </ul>
         </nav>
-    </div> <!-- div Row-->
+    </div> <!-- DIV ROW-->
+    
    
-    <div id="botonera-fila" class="row">
-        <div id="fila-llamar-siguiente" class="col-md-3">
-            <div class="col-sm-3">
-                <a href="#"><i class="fa fa-arrow-right fa-3x"> </i></a>
-            </div>
-            <div class="col-sm-4">
-                Llamar Siguiente
-            </div>
-            <div class="col-sm-4">
-                <ul id="horario">
-                    <li>15:25:00</li>
-                    <li>06/10/2015</li>
-                </ul>
-                <div class="col-sm-1">
-                   <!-- div de relleno --> 
-                </div>
-            </div> 
+    
+    <div class="row">
+     <div class="col-md-1">
+           <i class="fa fa-clock-o fa-3x"></i> 12:00PM
+        <nav id="menu-izquierda-container" class="navbar navbar-default">
+            <menu type="list" id="menu-izquierda" class="nav nav-pills"  >
+               <!--<li id="menu-bars"><i class="fa fa-fw fa-lg fa-bars"></i></li>-->
+               <li>
+                   <a  href="">
+                       <i class="fa fa-fw fa-lg fa-history"></i>
+                       <span>Historial</span>
+                    </a>
+                </li>
+               <li >
+                    <a href="" >
+                       <i class="fa fa-fw fa-lg fa-arrow-left"></i>
+                       <span>Antecedentes</span>
+                    </a>
+               </li>
+               <li>
+                   <a href="" >
+                       <i class="fa fa-fw fa-lg fa-heart"></i>
+                       <span>Signos vitales</span>
+                    </a>
+                </li>
+               <li>
+                   <a href="" >
+                   <i class="fa fa-fw fa-lg fa-bar-chart"></i>
+                    <span>Viariables</span>
+                   </a>
+                </li>
+               <li class="active">
+                   <a href="" >
+                       <i class="fa fa-fw fa-lg fa-question-circle"></i>
+                       <span>Motivo de Consulta</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="" >
+                       <i class="fa fa-fw fa-lg fa-pencil-square"></i>
+                       <span>Exámen Físico</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="" >
+                       <i class="fa fa-fw fa-lg fa-medkit"></i>
+                       <span>Diagnóstico</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="" >
+                       <i class="fa fa-fw fa-lg fa-stethoscope"></i>
+                       <span>Órdenes Médicas</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="" >
+                       <i class="fa fa-fw fa-lg fa-user-md"></i>
+                       <span>Seguro</span>
+                   </a>
+               </li>                
+            </menu>
+        </nav> <!-- Nav col md 1-->
+        
         </div>
-        <div class="col-md-9">
-            <div class="col-sm-3">
-               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo"></figure>
-            </div>
-            <div class="col-sm-4">
-                <ul id="data-fila">
-                    <li><strong>María del Cárme Azurdia Domínguez</strong></li>
-                    <li>Reconsulta</li>
-                    <li>Ticket # A777</li>
-                </ul>
-            </div>
-            
-            <div class="col-sm-2">
-                <!-- Div de relleno -->
-            </div>
-            
-            <div class="col-sm-2">
-                <i class="fa fa-caret-up fa-4x"> </i>  <i class="fa fa-caret-down fa-4x"> </i>
-            </div>
+    
+    <div class="col-md-11">
+        <div class="row">
+         <div class="col-md-1">
+            <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo"></figure>
         </div>
-    </div> <!-- Div Row -->
-    <hr>
-   <div class="row">
-       <div class="col-md-3">
-           <div id="ficha" class="row ">
-               <div class="panel-group" role=tablist aria-multiselectable="true">
-                <div id="contenedor-fichas" class="panel panel-default container-fluid" >
-                    
-                     
-                     <div class="panel-body well">
-                     <div class="row">
-                      <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-1">
-                           <div class="col-sm-4 ">
-                               <span>13:25:33</span>
-                           </div>
-                           <div class="col-sm-4">
-                               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo-ficha"></figure>
-                           </div>
-                           <div class="col-sm-4">
-                               {ICONOS}
-                           </div>
-                           <div id="data-medical" class="col-sm-12">
-                               <p>{NOMBRE PACIENTE}</p>
-                               <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
+        
 
-                           </div>
-                        </div>
-                        <div id="acordeon-1" class="collapse" data-toggle="false">
-                              <div id="content-extra" class="container col-md-12">
-                                  <hr class="gen-color">
-                                   <p>{DATOS_EXTRA}</p>
-                                   <p>{DATOS_EXTRA}</p>
 
-                               </div>
-                        </div>
-                        </div>
-                   </div>
-                   
-                     <div class="panel-body well">
-                      <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-2">
-                           <div class="col-md-4 ">
-                               <span>13:25:33</span>
-                           </div>
-                           <div class="col-md-4">
-                               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo-ficha"></figure>
-                           </div>
-                           <div class="col-md-4">
-                               {ICONOS}
-                           </div>
-                           <div id="data-medical" class="col-md-12">
-                               <p>{NOMBRE PACIENTE}</p>
-                               <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
-
-                           </div>
-                        </div>
-                        <div id="acordeon-2" class="collapse" data-toggle="false">
-                              <div id="content-extra" class="container col-md-12">
-                                  <hr class="gen-color">
-                                   <p>{DATOS_EXTRA}</p>
-                                   <p>{DATOS_EXTRA}</p>
-
-                               </div>
-                        </div>
-                   </div>
-                   
-                   <div class="panel-body well">
-                      <div class="acordeon-visible" data-toggle="collapse" data-target="#acordeon-3">
-                           <div class="col-md-4 ">
-                               <span>13:25:33</span>
-                           </div>
-                           <div class="col-md-4">
-                               <figure ><img src="./ui/img/ejemplo-paciente.png" alt="PACIENTE" class="img-redondeo-ficha"></figure>
-                           </div>
-                           <div class="col-md-4">
-                               {ICONOS}
-                           </div>
-                           <div id="data-medical" class="col-md-12">
-                               <p>{NOMBRE PACIENTE}</p>
-                               <p>{DR NOMBRE: MACABEO} <span>{ESPECIALIDAD:}</span> </p>
-
-                           </div>
-                        </div>
-                        <div id="acordeon-3" class="collapse" data-toggle="false">
-                              <div id="content-extra" class="container col-md-12">
-                                  <hr class="gen-color">
-                                   <p>{DATOS_EXTRA}</p>
-                                   <p>{DATOS_EXTRA}</p>
-
-                               </div>
-                        </div>
-                   </div>
-                   
-                   
-                   
-                   
-                   
-            </div>
+        <div class="col-md-4">
+            <ul id="card">                
+                <li>María del Cármen Azurdia Domínguez </li>
+                 <li>Reconsulta </li>
+                  <li>Tiket 2</li>
+            </ul>
             
-            <div id="atenciones" class="col md-4">
-                <ul id="atencion">
-                    <li>Atendidos: 14</li>
-                    <li>Esperando: 5</li>
-                    <li>en Hold: 1</li>
-                </ul>
-            </div>
-            </div>
-           </div>
-       </div> <!-- Fichas-->
-       <div class="col-md-9">
+        </div>
+        <div class="col-md-1 text-left">
+          <figure class="logo-gyt"><img src="./ui/img/gyt-min.png" alt="LOGO G&T"></figure>
+        </div>
+          <div id="acciones" class="col-md-6">
+            <ul id="menu-acciones">
+           
+                <li><a href="#" title="Interrumpir"><i class="fa fa-times fa-2x"></i></a></li>
+                <li><a href="#" title="Concluir"><i class="fa fa-check fa-2x"></i></a></li>
+            <li><a href="#" title="Transferir"><i class="fa fa-arrow-right fa-lg"></i><i class="fa fa-user fa-2x"></i></a></li>
+            <li><a href="#" title="Pausar"><i class="fa fa-pause fa-2x"></i></a></li>
+            </ul>
+        </div>
+        
+        
+    </div> <!-- DIV ROW -->
+        <div class="row">
+            
+          <div class="col-md-12">
+            <div class="col-md-10">
            <h2 class="limit">Historial</h2>
            
            <div class="container-fluid">
@@ -286,99 +240,8 @@
                    <div id="espaciador" class="col-sm-12">
                        <!-- Div espaciador -->
                    </div>
-                   <div class="col-sm-12">
-                       
-                      
-                      
-                      <div class="row">
-                         
-                          
-                              <div class="col-xs-6">
-                                    <h2 class="limit">Antecedentes</h2> 
-                                    
-                                   <!------>         
-                                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                       <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingOne">
-                                              <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                  Quirurgicos
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                              <div class="panel-body">
-                                                      <ul class="antecedentes">
-                                                          <li>Cirugía uno</li>
-                                                          <li>Cirugía dos</li>
-                                                          <li>Cirugía tres</li>
-                                                      </ul>
-                                              </div>
-                                            </div>
-                                       </div>
-                                       
-                                       <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingTwo">
-                                              <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                  Familiares
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                              <div class="panel-body">
-                                                      <ul class="antecedentes"> 
-                                                          <li>Diabetes</li>
-                                                          <li>Cardiaco</li>
-                                                          <li>Cirugía tres</li>
-                                                      </ul>
-                                              </div>
-                                            </div>
-                                       </div>
-                                    </div>                
-                                                            
-                                 <!--------->
-                                  
-                              </div>
-                              <div class="col-xs-6">
-                                  <h2 class="limit">Signos vitales</h2> 
-                                  <table class="table table-striped table-bordered content-f">
-                                      <tr>
-                                          <td>Peso:</td>
-                                          <td>165 Lbs.</td>
-                                          
-                                      </tr>
                                       
-                                      <tr>
-                                          <td>Estatura:</td>
-                                          <td>180 cms.</td>
-                                          
-                                      </tr>
-                                      <tr>
-                                          <td>Presión arterial:</td>
-                                          <td>90 Rps.</td>                                          
-                                      </tr>
-                                      <tr>
-                                          <td>Temperatura</td>
-                                          <td>30°C</td>                                          
-                                      </tr>
-                                  </table>
-                                                  
-                                  
-                              </div>
-                          
-                          
-                      </div><!--Div Row-->
-                      
-                      
-                       
-                       
-                       
-                   </div>
                    
-                   <div class="col-md-4">
-                       <a href="#" class="btn btn-success btn-block">Llamar</a>
-                   </div>
                    <div id="espaciador" class="col-md-12">
                        <!-- Div espaciador -->
                    </div>
@@ -387,25 +250,20 @@
                
            </div>
        </div>
-       
-   </div> <!-- Div Row-->
-    
-       
-   </div> <!-- DIV CONTAINER -->
+              
+
+            </div>
+          </div>       
+        </div><!-- Div row-->
+    </div>        
+    </div> <!-- Div Row-->    
    
-    <!-- Angular -->
-    <script type="text/javascript" src="ui/js/angular.min.js"></script>  
+   
     <!-- js Jquery -->
-    <script type="text/javascript" src="ui/js/jquery-1.11.3.min.js"> </script>    
+    <script type="text/javascript" src="/ui/js/jquery-1.11.3.min.js"> </script>    
     <!-- js boostrap -->
-    <script type="text/javascript" src="ui/js/bootstrap.min.js"> </script>    
+    <script type="text/javascript" src="/ui/js/bootstrap.min.js"> </script>    
     <!-- js CIAM -->
-    <script type="text/javascript" src="ui/js/ciam.js"></script>  
-    <!-- js ui-bootstrap -->
-    <script type="text/javascript" src="ui/js/ui-bootstrap-0.14.0.min.js"></script>  
-   
-    <script>
-        var app = angular.module('ciamWeb',['']);
-    </script>
+    <script type="text/javascript" src="/ui/js/ciam.js"></script>  
 </body>
 </html>
