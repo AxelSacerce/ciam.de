@@ -76,7 +76,7 @@
         <nav id="menu-izquierda-container" class="navbar navbar-default">
             <menu type="list" id="menu-izquierda" class="nav nav-pills"  >
                <!--<li id="menu-bars"><i class="fa fa-fw fa-lg fa-bars"></i></li>-->
-               <li class="active">
+               <li>
                    <a  href="">
                        <i class="fa fa-fw fa-lg fa-history"></i>
                        <span>Historial</span>
@@ -118,7 +118,7 @@
                        <span>Diagnóstico</span>
                    </a>
                </li>
-               <li>
+               <li  class="active">
                    <a href="" >
                        <i class="fa fa-fw fa-lg fa-stethoscope"></i>
                        <span>Órdenes Médicas</span>
@@ -170,7 +170,7 @@
            
                <div  class="folders-container">
                 <ul id="tabs"  class="nav nav-tabs" data-tabs="tabs">
-                    <li class="active">
+                    <li class="active">  <!--TAB LABORATORIOS-->
                        <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
                         Laboratorios
                         </a>
@@ -187,30 +187,371 @@
                     </li>
                 </ul> <!-- nav Tabs -->
                 <div class="tab-content">
-                    <div id="tab-1" class="col-md-12 tab-pane active">
-                       <div class="favoritos col-md-5">
-                           Favoritos
+                    <div id="tab-1" class="col-md-12 tab-pane active">   <!--TAB LABORATORIOS-->
+                       <div class="favoritos col-md-3">
+                           Favoritos  <i class="fa fa-star-o"></i>
+                           
+                           <ul id="favoritos">
+                               <li>Hematología Completa</li>
+                               <li>Pre Operatorio1</li>
+                               <li>Rayos X</li>
+                           </ul>
                        </div>
-                       <div class="detalle-favoritos col-md-7">
-                           Detalle favoritos
+                       <div class="detalle-favoritos col-md-9">  <!--TAB LABORATORIOS-->
+                           <div id="paquetes" class="row">
+                                   <form class="form-horizontal" method="POST" action="">                          
+                                                
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                <div class="col-md-6">
+                                                <div class="input-group">
+                                                    
+                                                      <select name="paquetes" id="" class="form-control">
+                                                       <option value="" disabled selected>Seleccione Paquete..</option>
+                                                        <option value="1">Paquetes 1</option>
+                                                        <option value="2">Paquetes 1</option>
+                                                    </select>
+                                                    </div>
+                                                    </div>
+                                                <div class="col-md-5">
+                                                <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Pre Operatorio" name="nombre">
+                                                <div class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                                </div>
+
+                                                </div>
+                                                </div>
+                                                
+                                                <div class="col-md-1">
+                                                
+                                                <button id="buscar" class="btn btn-success" type="submit">Buscar</button>
+                                                
+                                            </div>
+                                            </div>
+
+
+                                            
+                                            </div>
+                                    </form>
+                                    
+                                    <div class="col-md-12">  <!--TAB LABORATORIOS-->
+                                        
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                       <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                              <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                  Hematología Completa <i class="fa fa-shopping-cart"></i> <i class="fa fa-star-o"></i>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                      <div class="checkbox">
+                                                          <label><input type="checkbox" value="">Globulos Rojos / Hemoglobina</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                      <label><input type="checkbox" value="">Globulos blancos</label>
+                                                    </div>
+                                                    <div class="checkbox disabled">
+                                                      <label><input type="checkbox" value="" disabled>Clasificación de anemia</label>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                       </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">  <!--TAB LABORATORIOS-->
+                                        
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                       <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                              <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Pre Operatorio 1 <i class="fa fa-shopping-cart"></i> <i class="fa fa-star-o"></i>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                              <div class="panel-body">
+                                                      <div class="checkbox">
+                                                          <label><input type="checkbox" value="">Globulos Rojos / Hemoglobina</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                      <label><input type="checkbox" value="">Globulos blancos</label>
+                                                    </div>
+                                                    <div class="checkbox disabled">
+                                                      <label><input type="checkbox" value="" disabled>Clasificación de anemia</label>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                       </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">  <!--TAB LABORATORIOS-->
+                                        
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                       <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                              <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Pre Operatorio 2 <i class="fa fa-shopping-cart"></i> <i class="fa fa-star-o"></i>
+                                                </a>
+                                              </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                              <div class="panel-body">
+                                                    <div class="checkbox">
+                                                          <label><input type="checkbox" value="">Globulos Rojos / Hemoglobina</label>
+                                                    </div>
+                                                     <div class="checkbox">
+                                                      <label><input type="checkbox" value="">Globulos blancos</label>
+                                                    </div>
+                                                    <div class="checkbox disabled">
+                                                      <label><input type="checkbox" value="" disabled>Clasificación de anemia</label>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                       </div>
+                                      </div>
+                                    </div>
+                                </div>
                        </div>
                     </div>
-                    <div id="tab-2" class="col-md-12 tab-pane">
-                        Medicinas
+                    <div id="tab-2" class="col-md-12 tab-pane"> <!-- TAB MEDICAMENTOS -->
+                       <div id="medicamentos" class="row">
+                        <form class="form-horizontal" method="POST" action="">                          
+                                                
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                <div class="col-md-6">
+                                                <div class="input-group">
+                                                    
+                                                      <select name="paquetes" id="" class="form-control">
+                                                       <option value="" disabled selected>Seleccione...</option>
+                                                        <option value="1">General</option>
+                                                        <option value="2">Pediatria</option>
+                                                    </select>
+                                                    </div>
+                                                    </div>
+                                                <div class="col-md-5">
+                                                <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Buscar" name="nombre">
+                                                <div class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                                </div>
+
+                                                </div>
+                                                </div>
+                                                
+                                                <div class="col-md-1">
+                                                
+                                                <button id="buscar" class="btn btn-success" type="submit">Buscar</button>
+                                                
+                                            </div>
+                                            </div>
+
+
+                                            
+                                            </div>
+                                    </form>
+                                    <div class="col-md-4">
+                                        
+                                    </div>
+                                    <div class="col-md-4 "> <!-- TAB <MEDICAMENTOS></MEDICAMENTOS> -->
+                                        <ul id="medicina">
+                                            <li>Medicina 1 - Tabletas <i class="fa fa-shopping-cart"></i> </li>
+                                            <li>Medicina 1 - Jarabe <i class="fa fa-shopping-cart"></i></li>
+                                            <li>Medicina 1 - Ampollas <i class="fa fa-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        
+                                    </div>
+                                </div>
                     </div>
-                    <div id="tab-3" class="col-md-12 tab-pane">
+                    <div id="tab-3" class="col-md-12 tab-pane"> <!-- TAB PROCEDIMIENTOS -->
                         <div class="insumos col-md-5">
-                            Insumos
+                            <div class="row">
+                                <div class="col-md-12">
+                       <div class="container-fluid">      <!-- INSUMOS -->
+                       <h3>Insumos</h3>     
+                        <div class="row">
+                               <form class="form-horizontal" method="POST" action="">
+                                   
+                                    <div class="col-md-8">
+                                        
+                                        <div class="input-group">
+
+                                        <input class="form-control" type="text" placeholder="Buscar Insumos" name="insumosSearch">
+                                        <div class="input-group-addon">
+                                        <i class="fa fa-search"></i>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                   
+
+                                    <div class="col-md-4">
+                                        <div class="col-md-6">
+                                        <button class="btn btn-success" type="submit">Bucar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                  </div>  
+                    
+                               <div class="col-md-12">
+               
+                <div class="container-fluid">
+                <div id="contentInsumos" class="panel panel-default">
+                 <div class="panel-body">
+                      <ul class="list-group">
+                            <li class="well">1 Hilo <span><a href="#"><i class="fa fa-shopping-cart"></i></a></span>
+                              </li>
+                                        
+                                
+                            <li class="well">2 Aguja <span><a href="#"><i class="fa fa-shopping-cart"></i></a></span>
+                              </li>
+                                                          
+                        </ul>      
+                    </div>    
+             </div>
+                 
+
+                </div>
+                </div>
+                                
+                            </div>
                         </div>
                         <div class="col-md-7">
-                            Procedimientos
+                            <div class="row">
+                                <div class="col-md-12">
+                       <div class="container-fluid">      <!-- PROCEDIMIENTOS -->
+                       <h3>Procedimientos</h3>     
+                        <div class="row">
+                               <form class="form-horizontal" method="POST" action="">
+                                   
+                                    <div class="col-md-8">
+                                        
+                                        <div class="input-group">
+
+                                        <input class="form-control" type="text" placeholder="Buscar procedimientos" name="procedimientosSearch">
+                                        <div class="input-group-addon">
+                                        <i class="fa fa-search"></i>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                   
+
+                                    <div class="col-md-4">
+                                        <div class="col-md-6">
+                                        <button class="btn btn-success" type="submit">Bucar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                  </div>  
+                    
+                               <div class="col-md-12">
+               
+                <div class="container-fluid">
+                <div id="contentProcedimientos" class="panel panel-default">
+                 <div class="panel-body">
+                      <ul class="list-group">
+                            <li class="well">1 Sutura <span><a href="#"><i class="fa fa-shopping-cart"></i></a></span>
+                              </li>
+                                        
+                                
+                            
+                                                          
+                        </ul>      
+                    </div>    
+             </div>
+                 
+
+                </div>
+                </div>
+                                
+                            </div>
                         </div>
                     </div> 
                 </div> <!-- div Tab container -->
             </div> <!-- Div Folders Container-->            
         </div><!-- Div Col md 8-->
         <div class="col-md-4">
-            <h2>Órdenes Médicas</h2>          
+            <h2>Órdenes Médicas</h2>
+            
+                <div id="ordenesMedicas" class="row">  <!--DEL TAB LABORATORIOS-->
+                
+                <div id="ordenesLaboratorio" class="col-md-6">
+                    
+                    <div class="checkbox">
+                                                      <label><input type="checkbox" value="">Hematología Completa</label>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <select name="" id="selectOrdenes" >
+                            <option value="">Cólera</option>
+                            <option value="">Dengue</option>
+                            <option value="">Tetano</option>
+                        </select>
+                        
+                    </div>
+                <div class="col-md-12">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="observaciones" placeholder="Observaciones acá">
+                        </div>
+                    </form>
+                    <hr>
+                    <div id="ordenesMedicina" class="col-md-6"> <!--DE MEDICAMENTOS-->
+                    
+                    <div class="checkbox">
+                                                      <label><input type="checkbox" value="">Medicina 1 - Tabletas</label>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <select name="" id="selectMedicinas">
+                            <option value="">Cólera</option>
+                            <option value="">Dengue</option>
+                            <option value="">Tetano</option>
+                        </select>
+                        
+                    </div>
+                <div class="col-md-12">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="posologia" placeholder="Posología acá">
+                        </div>
+                    </form>
+                    <hr>
+                    <label>Procedimiento Quirúrgico
+                    <select name="" id="selectProcedimientos" >
+                            <option value="" selected>Por qué diagnóstico</option>
+                            <option value="">Dengue</option>
+                            <option value="">Tetano</option>
+                        </select></label>
+                    <hr>
+                    
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <input type="button" class="btn btn-success" value="Solicitar">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+           
+            </div>
+            
+                                
         </div><!-- Div col md 3-->
     </div>        
     </div> <!-- Div Row-->    
