@@ -130,7 +130,7 @@ nav#menu-izquierda-container.navbar.navbar-default{
 }
 
 menu#menu-izquierda li{
-        background: rgba(61,61,61,0.50);
+        background: rgba(61,61,61,0.85);
 }
 
 menu#menu-izquierda li a:hover{
@@ -268,6 +268,39 @@ h3.limit, h2.limit{
     -moz-box-shadow:    5px 4px 22px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         5px 4px 22px 0px rgba(50, 50, 50, 0.75);
 }
+
+
+
+#contenedor-fichas > div.atendido{
+       
+    background: rgba(2, 180, 36, 0.50);
+    color: #464443;
+    
+    
+    
+}
+
+
+#contenedor-fichas > div.activo{
+    
+    -webkit-box-shadow: 5px 4px 22px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    5px 4px 22px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         5px 4px 22px 0px rgba(50, 50, 50, 0.75);
+    background: #0067b1;
+    border: 1px solid #000;
+    color: #fff;
+    
+}
+
+#content-extra.container.col-md-12.atendido{
+    color: #464443;
+}
+
+
+#content-extra.container.col-md-12.activo{
+    color: #fff;
+}
+
 
 /* fin pagina Principal  */
 
