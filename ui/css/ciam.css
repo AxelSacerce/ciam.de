@@ -122,11 +122,22 @@ nav#menu-izquierda-container.navbar.navbar-default{
     border: none;
 }
 #menu-izquierda-container{
-    z-index: 1;
+    z-index: 9999;
+    /*background-color: #000;*/
 }
 #menu-izquierda li a{
         color: #FFF;
 }
+
+menu#menu-izquierda li{
+        background: rgba(61,61,61,0.50);
+}
+
+menu#menu-izquierda li a:hover{
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
 #menu-izquierda li.active a:hover{
     background-color: #FFF;
 }
